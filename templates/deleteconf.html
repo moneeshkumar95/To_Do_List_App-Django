@@ -10,6 +10,7 @@
         {% csrf_token %}
         <p>Are you sure you want to delete <b>{{task}}</b> ?</p>
         <input class="button" type="submit" value="Delete" />
+        <button class="button"><a href="{% url 'tasks' %}">Back</a></button>
     </form>
 </div>
 

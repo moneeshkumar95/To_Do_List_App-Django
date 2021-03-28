@@ -6,6 +6,7 @@ from django.contrib.auth.views import LoginView, FormView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from .forms import RegisterForm
 
 from django.urls import reverse_lazy
 from .models import Task
@@ -23,7 +24,7 @@ class TaskList(LoginRequiredMixin, ListView):
 
         search_input = self.request.GET.get('search-area') or ''
         if search_input:
-            context['tasks'] = context['tasks'].filter(title__startswith = search_input)
+            context['tasks'] = context['tasks'].filter(title__icontains= search_input)
             context['search_input'] = search_input
 
         return context
@@ -66,7 +67,7 @@ class LoginPage(LoginView):
 class Registerpage(FormView):
     fields = '__all__'
     template_name = 'register.html'
-    form_class = UserCreationForm
+    form_class = RegisterForm
     success_url = reverse_lazy('tasks')
 
     def form_valid(self, form):
