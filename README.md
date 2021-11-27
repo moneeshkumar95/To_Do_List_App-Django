@@ -1,6 +1,6 @@
 # To_Do_List_App-Django-
 
-![112527760-66593f80-8dc9-11eb-9885-32ef4c86fb59](https://user-images.githubusercontent.com/78355845/143681428-f3a0e292-4e41-4ace-876b-e5bd51790e4a.png)
+![Screenshot from 2021-11-27 18-13-26](https://user-images.githubusercontent.com/78355845/143681809-ce315096-123b-4dc4-9a79-c7cb7a399d29.png)
 
 ![image](https://user-images.githubusercontent.com/78355845/112527835-7a04a600-8dc9-11eb-91d9-5460eb8d4e1d.png)
 
